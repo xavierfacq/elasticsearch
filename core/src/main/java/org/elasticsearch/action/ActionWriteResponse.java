@@ -34,8 +34,8 @@ import org.elasticsearch.common.xcontent.json.JsonXContent;
 import org.elasticsearch.rest.RestStatus;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * Base class for write action responses.
@@ -163,10 +163,10 @@ public class ActionWriteResponse extends ActionResponse {
         @Override
         public String toString() {
             return "ShardInfo{" +
-                "total=" + total +
-                ", successful=" + successful +
-                ", failures=" + Arrays.toString(failures) +
-                '}';
+                    "total=" + total +
+                    ", successful=" + successful +
+                    ", failures=" + Arrays.toString(failures) +
+                    '}';
         }
 
         public static ShardInfo readShardInfo(StreamInput in) throws IOException {
